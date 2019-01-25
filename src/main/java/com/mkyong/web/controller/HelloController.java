@@ -47,13 +47,13 @@ public class HelloController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String printWelcome(ModelMap model, HttpServletRequest req) throws InterruptedException {
-		byte[] M_4 = new byte[1024 * 1024 * 4];
-		while (true) {
-			Thread.sleep(100);
-			M_4 = new byte[1024 * 1024 * 4];
-		}
-		//model.addAttribute("message", "Spring 3 MVC Hello World");
-		//return "hello";
+//		byte[] M_4 = new byte[1024 * 1024 * 4];
+//		while (true) {
+//			Thread.sleep(100);
+//			M_4 = new byte[1024 * 1024 * 4];
+//		}
+//		//model.addAttribute("message", "Spring 3 MVC Hello World");
+		return "hello";
 
 	}
 
