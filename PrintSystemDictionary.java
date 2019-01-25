@@ -29,6 +29,7 @@ public class PrintSystemDictionary {
 
 class PrintSystemDictionaryTask extends Tool {
     public PrintSystemDictionaryTask() {
+        System.out.println("new PrintSystemDictionaryTask ");
     }
 
     class SystemDictionaryPrinter extends Dictionary {

@@ -179,12 +179,12 @@ public class SystemDictionaryDump {
     }
 
     public static void runJavacCompile(String fileName, String sep) throws Exception {
-        String cmd = "javac -cp ." + sep + getJavaHome() + "/lib/sa-jdi.jar " + fileName;
+        String cmd = getJavaHome() + "/bin/javac -cp ." + sep + getJavaHome() + "/lib/sa-jdi.jar " + fileName;
         Runtime.getRuntime().exec(cmd);
     }
 
     public static Process runJavaExec(String fileName, String pid, String sep) throws Exception {
-        String cmd = "java -cp ."+ sep + getJavaHome() + "/lib/sa-jdi.jar " + fileName.replace(".java", "") + " " + pid;
+        String cmd = getJavaHome() + "/bin/java -cp ."+ sep + getJavaHome() + "/lib/sa-jdi.jar " + fileName.replace(".java", "") + " " + pid;
         System.out.println(cmd);
         return Runtime.getRuntime().exec(cmd);
     }
